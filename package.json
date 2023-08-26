@@ -6,17 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-cards": "DEBUG=cards:*,packs:* node ./cards/index.mjs",
+    "storyblok": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "dependencies": {
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "clsx": "^2.0.0",
+    "dotenv": "^16.3.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "local-ssl-proxy": "^2.0.5",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "slugify": "^1.6.6",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "commander": "^11.0.0",
+    "debug": "^4.3.4"
   }
 }

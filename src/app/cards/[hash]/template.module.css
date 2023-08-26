@@ -1,0 +1,7 @@
+.template {
+    display: flex;
+    height: 100vh;
+    height: 100dvh;
+    place-content: center;
+    place-items: center;
+}
